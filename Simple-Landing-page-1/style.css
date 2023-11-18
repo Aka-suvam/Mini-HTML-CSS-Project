@@ -1,0 +1,156 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html,body {
+    width:100%;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;}
+main {
+    width:100%;
+    height: 100%;
+    background-color: #ffff00;
+}
+nav {
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+    height: 100px;
+    border-bottom: 2px solid #dadada;
+    padding:0 4vw;
+    background-color: white;
+      
+}
+nav h1 {
+    font-weight: 900;
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap:4vw;
+    font-weight: 800;
+    align-items: center;
+}
+nav button {
+    padding:0.7vw 1.6vw;
+    border: none;
+    font-size: 0.8vw;
+    border-radius: 0.3vw;
+    color:white;
+    background-color: black;
+    font-weight: 900;
+}
+nav i {
+    display: none;
+    font-size: 7vw;
+    font-weight: 900;
+}
+.content {
+    width:100%;
+    height:calc(100%-100px);
+    display: flex;
+}
+.left{
+    width:61%;
+    height: 100%;
+    
+}
+.left h1 {
+    font-size: 5vw;
+    color:white;
+    padding-top: 4vw;
+    padding-left: 2.5vw;
+    
+}
+.left p {
+    width:80%;
+    text-align: justify;
+    font-weight:600 ;
+    color:#455a64;
+    color:black;
+    padding-top:2.3vw;
+    padding-left: 2.5vw;
+    line-height: 1.7vw;
+}
+
+.left button {
+    font-size: 1.5vw;
+    font-weight: 900;
+    padding: 1vw 3vw;
+    margin-top: 3.5vw;
+    margin-left: 2.5vw;
+    color:white;
+    background-color: black;
+    border: none;
+    border-radius: 0.3vw;
+
+
+}
+.right {
+    width:41%;
+    height: 100%;
+}
+.right img {
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width:600px){
+    nav ul{
+        display: none;
+    }
+    nav {
+        height: 45px;
+        width: 100%;
+    }
+    nav h1{
+        font-size: 5vw;
+        font-weight: 700;
+        font-family: ' sans-serif';
+    }
+nav i {
+    display: block;
+}
+    .content{
+        flex-direction: column;
+}
+    
+.left{
+        width:100%;
+        height:350px;
+        padding-left: 2vw;
+       /*border: 2px solid black;*/
+    }
+    .left h1{
+        font-size: 12vw;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .left p{
+        font-size: 2.9vw;
+        line-height: 3.9vw;
+        color:#263238;
+        padding-top: 7.5vw;
+    }
+   .left button {
+  padding:2.5vw 6.5vw;
+  font-size: 5vw;
+  border: none;
+  border-radius: 0.9vw;
+  margin-top: 7vw;
+  }
+
+    .right {
+        width:100%;
+        height:270px;
+        /*border: 2px solid black;*/
+        
+    }
+    right img {
+        width:100%;
+        height:100%;
+    }
+    
+}
